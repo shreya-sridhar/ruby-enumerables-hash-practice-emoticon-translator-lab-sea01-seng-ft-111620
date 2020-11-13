@@ -16,7 +16,7 @@ def load_library(path)
   emoticon_hash
 end
 
-def get_japanese_emoticon(path, emotion)
+def get_japanese_emoticon
   # code goes here
     emoticon_hash = load_library(path)
   result = emoticon_hash["get_emoticon"][emoticon]
@@ -26,7 +26,7 @@ def get_japanese_emoticon(path, emotion)
   result
 end
 
-def get_english_meaning(path, emotion)
+def get_english_meaning
   # code goes here
   emoticon_hash = load_library(path)
   result = emoticon_hash["get_meaning"][emoticon]
